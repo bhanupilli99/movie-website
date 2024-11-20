@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile | Movie Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #3e8e41;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main {
+            padding: 20px;
+        }
+        .profile-details {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        .profile-details h2 {
+            color: #3e8e41;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .profile-details p {
+            font-size: 18px;
+            color: #555;
+            margin: 8px 0;
+        }
+        .profile-details label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        .profile-details input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .profile-details button {
+            background-color: #3e8e41;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .profile-details button:hover {
+            background-color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+        <nav>
+            <a href="/xampp/htdocs/IP/home page.html">Home</a>
+            <a href="/xampp/htdocs/IP/contact.html">Contact us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="profile-details">
+            <h2>Profile Details</h2>
+            <form>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" value="John" readonly>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" value="Doe" readonly>
+
+                <label for="age">Age:</label>
+                <input type="text" id="age" value="30" readonly>
+
+                <label for="phone-number">Phone Number:</label>
+                <input type="text" id="phone-number" value="+1234567890" readonly>
+
+                <label for="alt-phone-number">Alternate Number:</label>
+                <input type="text" id="alt-phone-number" value="+0987654321" readonly>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" value="johndoe@gmail.com" readonly>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" value="123 Main St, City" readonly>
+
+                <button type="button">Edit Profile</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

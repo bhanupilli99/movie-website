@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Movie Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #3e8e41; /* Green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700; /* Gold */
+        }
+        main {
+            padding: 20px;
+            background-color: #fff;
+            border-top: 5px solid #3e8e41; /* Green */
+        }
+        section {
+            text-align: center;
+        }
+        section h2 {
+            font-size: 30px;
+            color: #3e8e41;
+        }
+        .movie-card {
+            display: inline-block;
+            width: 200px;
+            margin: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+        .movie-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .movie-card p {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Movie Ticket Booking</h1>
+        <nav>
+            <a href="/xampp/htdocs/IP/movielisting.html">Movies</a>
+            <a href="/xampp/htdocs/IP/login.html">Login</a>
+            <a href="/xampp/htdocs/IP/moviedetails.html">moviedetails</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Featured Movies</h2>
+            <!-- Example movie card -->
+            <div class="movie-card">
+                <img src="/xampp/htdocs/IP/ka movie.jpeg" alt="Movie 1">
+                <p>Ka</p>
+            </div>
+            <div class="movie-card">
+                <img src="/xampp/htdocs/IP/lucky bhaskar.jpeg" alt="Movie 2">
+                <p>lucky bhaskar</p>
+            </div>
+            <div class="movie-card">
+                <img src="/xampp/htdocs/IP/masooda.avif" alt="Movie 3">
+                <p>Masooda</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

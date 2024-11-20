@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details | Movie Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #3e8e41; /* Green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700; /* Gold */
+        }
+        main {
+            padding: 20px;
+        }
+        .movie-details {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .movie-details img {
+            width: 300px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .movie-info {
+            max-width: 600px;
+        }
+        .movie-info h2 {
+            font-size: 32px;
+            color: #3e8e41;
+            margin-bottom: 15px;
+        }
+        .movie-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .movie-info .genre, .movie-info .release-date {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .book-ticket {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #3e8e41;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .book-ticket:hover {
+            background-color: #ffd700; /* Gold */
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Ticket Booking</h1>
+        <nav>
+            <a href="/xampp/htdocs/IP/home page.html">Home</a> | 
+            <a href="/xampp/htdocs/IP/movielisting.html">Movies</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Movie 1 -->
+        <div class="movie-details">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjEzN2ZjYjUtZTI3NC00MzMyLWJiNDAtMDBiZGEzNTBiY2RkXkEyXkFqcGc@._V1_.jpg" alt="Movie Poster">
+            <div class="movie-info">
+                <h2>Lucky Bhaskar</h2>
+                <p class="genre">Drama, Romance</p>
+                <p class="release-date">Release Date: September 27, 2024</p>
+                <p>Lucky Bhaskar is the heartwarming tale of a small-town underdog with an unwavering belief in his own luck...</p>
+                <a href="/xampp/htdocs/IP/showtimes.html" class="book-ticket">Book Ticket</a>
+            </div>
+        </div>
+        <hr>
+        <!-- Movie 2 -->
+        <div class="movie-details">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4IlluBAUfNE2lE1x_DaV9LHcHooBoE8NNdQ&s.jpg">
+            <div class="movie-info">
+                <h2>Masooda</h2>
+                <p class="genre">Horror</p>
+                <p class="release-date">Release Date: October 15, 2024</p>
+                <p>In a galaxy on the brink of chaos, a group of young rebels must rise against the tyrannical Empire...</p>
+                <a href="booking.html" class="book-ticket">Book Ticket</a>
+            </div>
+        </div>
+        <hr>
+        <!-- Movie 3 -->
+        <div class="movie-details">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMVgEQaADwFHC4NHTfDlgUZ8-lhn95qp_cZQ&s.jpg" alt="Movie 3 Poster">
+            <div class="movie-info">
+                <h2>ka</h2>
+                <p class="genre">Thriller</p>
+                <p class="release-date">Release Date: October 31, 2024</p>
+                <p>Set in a mystical land steeped in ancient legends, KA follows the journey of an enigmatic warrior chosen by destiny to protect the sacred relic of life. Born with divine powers but burdened by a cursed past, KA must navigate a world of betrayal, war, and magic.As the forces of darkness rise under the command of the ruthless sorcerer Vaashran, KA teams up with a rogue archer and a brilliant alchemist to prevent the annihilation of his homeland. Through epic battles, jaw-dropping visuals, and a story that delves into the timeless clash between good and evil, KA delivers a cinematic experience unlike any other..</p>
+                <a href="booking.html" class="book-ticket">Book Ticket</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

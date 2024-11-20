@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Listing | Movie Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #3e8e41; /* Green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700; /* Gold */
+        }
+        main {
+            padding: 20px;
+        }
+        section h2 {
+            font-size: 30px;
+            color: #3e8e41;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 10px;
+        }
+        .movie-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .movie-card:hover {
+            transform: scale(1.05);
+        }
+        .movie-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 5px solid #3e8e41;
+        }
+        .movie-card .info {
+            padding: 15px;
+        }
+        .movie-card .info h3 {
+            margin: 0;
+            font-size: 22px;
+            color: #3e8e41;
+        }
+        .movie-card .info p {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>All Movies</h1>
+        <nav>
+            <a href="/xampp/htdocs/IP/home page.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Available Movies</h2>
+            <div class="movie-grid">
+                <!-- Movie Card 1 -->
+                <div class="movie-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4IlluBAUfNE2lE1x_DaV9LHcHooBoE8NNdQ&s.jpg" alt="Masooda">
+                    <div class="info">
+                        <h3>Masooda</h3>
+                        <p>horror</p>
+                    </div>
+                </div>
+                <!-- Movie Card 2 -->
+                <div class="movie-card">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjEzN2ZjYjUtZTI3NC00MzMyLWJiNDAtMDBiZGEzNTBiY2RkXkEyXkFqcGc@._V1_.jpg" alt="lucky bhaskar">
+                    <div class="info">
+                        <h3>lucky bhaskar</h3>
+                        <p>Drama, Romance</p>
+                    </div>
+                </div>
+                <!-- Movie Card 3 -->
+                <div class="movie-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMVgEQaADwFHC4NHTfDlgUZ8-lhn95qp_cZQ&s.jpg" alt="ka">
+                    <div class="info">
+                        <h3>ka</h3>
+                        <p>Thriller</p>
+                    </div>
+                </div>
+                <!-- More movie cards can be added here -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
